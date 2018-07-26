@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  kanji: MyString
+  'on': MyString
+  kun: MyString
+  mean_h: MyString
+  mean_v: MyString
+
+two:
+  kanji: MyString
+  'on': MyString
+  kun: MyString
+  mean_h: MyString
+  mean_v: MyString

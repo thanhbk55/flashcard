@@ -1,0 +1,13 @@
+- content_for :header, render("layouts/header")
+- content_for :footer, render("layouts/footer")
+
+.mdl-layout__tab-panel.is-active
+  section.section--center.mdl-grid.mdl-grid--no-spacing.mdl-shadow--2dp
+    .mdl-card.mdl-cell.mdl-cell--12-col
+      .mdl-card__supporting-text.mdl-grid.mdl-grid--no-spacing
+        = form_for @flash_card, url: flash_cards_path do |f|
+          .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+            input.mdl-textfield__input type="text" id="sample3"
+            label.mdl-textfield__label for="sample3" Text...
+          .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+            = f.submit "Tạo", class: "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast"
